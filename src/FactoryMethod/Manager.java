@@ -25,13 +25,13 @@ public class Manager {
 
         carFactory = new SedanFactory();
         sedan = carFactory.manufacturing("검정","가죽시트");
-        sedan.TestDrive();
+        sedan.testDrive();
 
         System.out.println();
 
         carFactory = new CoupeFactory();
         coupe = carFactory.manufacturing("파랑","헤드 업 디스플레이");
-        coupe.TestDrive();
+        coupe.testDrive();
 
     }
 }
