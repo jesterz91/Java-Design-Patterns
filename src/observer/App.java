@@ -27,12 +27,19 @@ public class App {
 
         // newsAgency 에 변경사항을 발생
         newsAgency.addNews("서울지역 초미세먼지 경보 발령");
-        newsAgency.addNews("갤럭시 S10 화이트 생삭이 인기");
+        newsAgency.addNews("갤럭시 S10 화이트 색상이 인기");
 
         // radioChannel 은 구독을 해지한 이후에는 상태변화를 통지받지 못함
         newsAgency.unRegister(radioChannel);
         newsAgency.addNews("블록체인 엔지니어 수요 '고공행진'");
 
+
+        /*
+         *  인터페이스를 이용해 상태변경을 콜백으로 처리하
+         */
+        Button button = new Button();
+        button.setOnClickListener(System.out::println);
+        button.onClick();
     }
 
 }
