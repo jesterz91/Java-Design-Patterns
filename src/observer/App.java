@@ -1,12 +1,11 @@
-package observer;
+package Observer;
 
 /**
  *  옵저버 패턴은 한 객체의 상태값이 바뀌면 연관된 다른 객체들이 이를 통지받아
  *  자동으로 업데이트 되도록 1:N  관계를 맺는 것
  *
  *  자기상태를 바꾸는 객체를 주체(Subject) , 상태변경을 통지받는 객체를 옵저버(Observer) 라 한다.
- *  주체와 옵저버는 1:N 관계로 하나의 주체가 여러 옵저버를 거느릴 수 있다.
- *
+ *  주체와 옵저버는 1:N 관계로 하나의 주체가 여러 옵저버를 거느릴 수 있다
  */
 
 public class App {
@@ -33,13 +32,12 @@ public class App {
         newsAgency.unRegister(radioChannel);
         newsAgency.addNews("블록체인 엔지니어 수요 '고공행진'");
 
-
         /*
-         *  인터페이스를 이용해 상태변경을 콜백으로 처리하
+         *  인터페이스를 이용해 상태변경을 콜백으로 처리
          */
         Button button = new Button();
         button.setOnClickListener(System.out::println);
         button.onClick();
+        
     }
-
 }
